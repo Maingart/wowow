@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.use(express.static('public')); // Раздача статических файлов
+app.use(express.static('dist')); // Раздача статических файлов
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
